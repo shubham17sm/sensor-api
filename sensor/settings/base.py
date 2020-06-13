@@ -14,6 +14,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'rest_framework',
+    'rest_framework.authtoken',
     
     #own app
     'myapp',
@@ -30,7 +33,7 @@ MIDDLEWARE = [
     
 ]
 
-ROOT_URLCONF = 'myproject.urls'
+ROOT_URLCONF = 'sensor.urls'
 
 TEMPLATES = [
     {
@@ -48,7 +51,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'myproject.wsgi.application'
+WSGI_APPLICATION = 'sensor.wsgi.application'
 
 
 
