@@ -5,6 +5,7 @@ from . import views
 
 urlpatterns = [
     path('sensor-api/', views.SensorView.as_view(), name='sensor-api'),
+    path('sensor-detail/<pk>/', views.SensorDetail.as_view(), name='sensor-detail'),
 ]
 
 if settings.DEBUG:
